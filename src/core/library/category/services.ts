@@ -1,8 +1,8 @@
-import axiosInstance from '../../api/axiosInstance';
+import axiosInstance from '../../../services/axiosInstance';
 
 export const fetchCategories = async () => {
   const response = await axiosInstance.get('/categories/');
-  return response.data;
+  return response.data.categories || [];
 };
 
 // export const createCategory = async (categoryData: { name: string }) => {

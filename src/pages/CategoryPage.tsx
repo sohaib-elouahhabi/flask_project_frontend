@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchCategories } from '../core/category/services';
+import { fetchCategories } from '../core/library/category/services';
 import {
   AppBar,
   Box,
